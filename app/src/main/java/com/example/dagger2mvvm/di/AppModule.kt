@@ -8,7 +8,7 @@ import android.os.HandlerThread
 import android.os.Looper
 import android.preference.PreferenceManager
 import com.example.dagger2mvvm.di.viewmodel.ViewModelSubcomponent
-import com.example.dagger2mvvm.viewmodel.AppViewModelFactory
+import com.example.dagger2mvvm.base.AppViewModelFactory
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

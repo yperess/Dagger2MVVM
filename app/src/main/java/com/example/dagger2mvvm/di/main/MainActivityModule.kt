@@ -1,7 +1,7 @@
 package com.example.dagger2mvvm.di.main
 
 import android.app.Activity
-import com.example.dagger2mvvm.main.MainActivity
+import com.example.dagger2mvvm.ui.main.MainActivity
 import dagger.Binds
 import dagger.Module
 import dagger.Subcomponent

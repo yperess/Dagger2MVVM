@@ -1,6 +1,6 @@
 package com.example.dagger2mvvm.di.viewmodel
 
-import com.example.dagger2mvvm.main.MainActivityViewModel
+import com.example.dagger2mvvm.ui.main.MainActivityViewModel
 import dagger.Subcomponent
 
 /**
