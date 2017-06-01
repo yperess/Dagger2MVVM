@@ -7,8 +7,8 @@ import android.os.Handler
 import android.os.HandlerThread
 import android.os.Looper
 import android.preference.PreferenceManager
-import com.example.dagger2mvvm.di.viewmodel.ViewModelSubcomponent
 import com.example.dagger2mvvm.base.AppViewModelFactory
+import com.example.dagger2mvvm.di.viewmodel.ViewModelSubcomponent
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -34,6 +34,7 @@ class AppModule(private val application: Application) {
     @MainThreadScope
     fun provideMainThread(): Handler = Handler(Looper.getMainLooper())
 
+    @Provides
     @Singleton
     fun provideViewModelFactory(viewModelSubcomponent: ViewModelSubcomponent.Builder
             ): ViewModelProvider.Factory = AppViewModelFactory(viewModelSubcomponent.build())
